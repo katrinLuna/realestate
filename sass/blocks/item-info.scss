@@ -1,0 +1,100 @@
+.item-info {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    padding: 15px;
+    overflow: hidden;
+
+    &__back-btn {
+        text-decoration: underline;
+        margin-bottom: 15px;
+        @include set-font (14px, $font-bold, rgba($blue, 0.8));
+        border: none;
+        background-color: transparent;
+    }
+
+    &__title {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        @include set-font (24px, $font-bold, $black);
+    }
+    
+    &__id {
+        margin-top: 0;
+        margin-bottom: 5px;
+        @include set-font (12px, $font-normal, $grey);
+    }
+
+    &__price {
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include set-font (18px, $font-bold, $blue);
+    }
+
+    
+    &__description {
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include set-font (14px, $font-normal, $black);
+    }
+    
+    &__address {
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include set-font (14px, $font-semi-bold, $black);
+    }
+
+    &__sellerName {
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include set-font (14px, $font-normal, $black);
+    }
+
+    &__gallery-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        max-width: 100%;
+        overflow: visible;
+        transition: all 0.4s ease;
+    }
+
+    &__img-wrapper {
+        min-width: 100%;
+        height: 450px;
+        // margin: auto;
+    }
+
+    &__img {
+        height: 450px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    @media (min-width: $tablet-width) {
+        margin-top: 30px;
+
+        &__header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            flex-flow: row-reverse;
+        }
+
+        &__back-btn {
+            margin-bottom: 0;
+            margin-left: 30px;
+        }
+
+    }
+
+    
+        // @media (min-width: $desktop-width) {
+
+        // }
+}

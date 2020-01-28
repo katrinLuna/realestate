@@ -21,16 +21,25 @@
     </ul>
 
     <section class="item-info visually-hidden">
-      <button class="item-info__back-btn" role="button">Назад</button>
-
+      
       <div class="item-info__text">
-        <p class="item-info__title"></p>
-        <p class="item-info__address"></p>
+        <div class="item-info__header">
+          <button class="item-info__back-btn" role="button"> &lt; Назад</button>
+          <div>
+            <span class="item-info__title"></span>
+            <span class="item-info__id"></span>
+          </div>
+        </div>
+        
         <p class="item-info__price"></p>
         <p class="item-info__description"></p>
+        <p class="item-info__address"></p>
         <p class="item-info__sellerName"></p>
       </div>
-      <div class="item-info__img-gallery">
+
+      <div class="item-info__gallery-wrapper">
+        <button class="item-info__gallery-forward"></button>
+        <button class="item-info__gallery-back"></button>
       </div>
     </section>
 
@@ -44,7 +53,9 @@
       <img class="realestate-item__preview" src="" alt="" >
       <p class="realestate-item__id"></p>
     </li>
-    <img class="item-info__img" src="" alt="" >
+    <div class="item-info__img-wrapper">
+      <img class="item-info__img" src="" alt="" >
+    </div>
   </template>
 
   <script src="download-data.js"></script>

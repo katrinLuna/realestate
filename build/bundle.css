@@ -178,9 +178,6 @@ input {
   -moz-appearance: none;
   appearance: none; }
 
-.no-mobile {
-  display: none; }
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -196,389 +193,77 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-.page-wrapper {
-  width: 100%;
-  min-height: 100vh;
-  padding-bottom: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-attachment: fixed;
-  background-color: #3abbba;
-  background-position: 0 0;
-  background-image: linear-gradient(160deg, #6039aa, #32d6bd); }
-  @media (min-width: 768px) {
-    .page-wrapper {
-      background-image: linear-gradient(143deg, #6039aa, #32d6bd); } }
-  @media (min-width: 1130px) {
-    .page-wrapper {
-      background-image: linear-gradient(118deg, #6039aa, #32d6bd); } }
-
-.page-header {
+.content-wrapper {
   min-width: 320px;
-  min-height: 46px;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-  .page-header__logo-link {
-    display: block;
-    height: 30px; }
-  .page-header__logo-picture {
-    width: 99px;
-    height: 30px; }
-  @media (min-width: 768px) {
-    .page-header {
-      min-width: 768px;
-      margin: 0 auto;
-      padding-left: 24px;
-      padding-right: 24px; } }
-  @media (min-width: 1130px) {
-    .page-header {
-      width: 1130px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+  max-width: 1200px;
+  margin: 0 auto; }
 
-.main-wrapper {
-  min-width: 320px;
+.realestate-list {
+  width: 290px;
   margin-top: 30px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  list-style-type: none; }
   @media (min-width: 768px) {
-    .main-wrapper {
-      min-width: 768px;
-      margin-top: 56px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 0;
-      padding-left: 24px;
-      padding-right: 24px; } }
+    .realestate-list {
+      width: 670px;
+      display: grid;
+      grid-gap: 20px 35px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto; } }
   @media (min-width: 1130px) {
-    .main-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-      width: 1130px;
-      margin-top: 76px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+    .realestate-list {
+      width: 1200px;
+      grid-template-columns: 1fr 1fr 1fr; } }
 
-.payment-slogan {
+.realestate-item {
   width: 100%; }
-  .payment-slogan__header {
+  .realestate-item__name {
     margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
-    font-weight: 800;
-    color: #ffffff; }
-  .payment-slogan__text {
-    margin-top: 29px;
-    margin-bottom: 0;
-    opacity: 0.6;
-    font-size: 14px;
-    font-weight: 400;
-    color: #ffffff; }
-  .payment-slogan__amount {
-    font-weight: 700; }
-  @media (min-width: 768px) {
-    .payment-slogan {
-      width: 85%; }
-      .payment-slogan__header {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 48px; }
-      .payment-slogan__text {
-        margin-top: 40px;
-        margin-bottom: 0;
-        font-size: 21px; } }
-  @media (min-width: 1130px) {
-    .payment-slogan {
-      -ms-flex-preferred-size: 438px;
-          flex-basis: 438px;
-      width: 438px;
-      padding-top: 29px; }
-      .payment-slogan__header {
-        margin-top: 0;
-        margin-bottom: 0; }
-      .payment-slogan__text {
-        width: 400px;
-        margin-top: 40px;
-        margin-bottom: 0; } }
-
-.payment-wrapper {
-  min-width: 288px;
-  margin-top: 40px;
-  padding-top: 40px;
-  padding-right: 16px;
-  padding-left: 16px;
-  padding-bottom: 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06); }
-  @media (min-width: 768px) {
-    .payment-wrapper {
-      width: 627px;
-      margin-top: 58px;
-      margin-right: auto;
-      margin-left: auto;
-      padding-top: 30px;
-      padding-right: 48px;
-      padding-left: 47px; } }
-  @media (min-width: 1130px) {
-    .payment-wrapper {
-      min-width: 627px;
-      -ms-flex-preferred-size: 627px;
-          flex-basis: 627px;
-      margin-top: 0;
-      margin-right: 0;
-      margin-left: 0; } }
-
-.payment-form {
-  min-width: 256px; }
-  .payment-form__secure-text {
-    display: none; }
-  .payment-form__submit-button-wrapper {
-    width: 100%;
-    text-align: center; }
-  .payment-form__submit-button {
-    width: 256px;
-    height: 56px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-left: 65px;
-    padding-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333; }
+  .realestate-item__price {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-    text-transform: uppercase;
-    border-radius: 50px;
-    background-color: #6039aa;
-    background-image: url("img/lock--white.svg");
-    background-repeat: no-repeat;
-    background-size: 16px 21px;
-    background-position: 40px 17px;
-    border: none;
-    white-space: nowrap; }
-    .payment-form__submit-button:hover, .payment-form__submit-button:focus {
-      outline: none;
-      -webkit-transition: background-color 0.5s;
-      transition: background-color 0.5s;
-      background-color: #32d6bd; }
-    .payment-form__submit-button:active {
-      background-color: #21a08c; }
-  .payment-form__pay-option {
-    width: 100%;
-    text-align: center;
-    margin-top: 21px; }
-  .payment-form__pay-option a {
-    text-decoration: none;
+    font-weight: 700;
+    color: #333333; }
+  .realestate-item__address {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-size: 14px;
+    font-weight: 700;
+    color: #333333; }
+  .realestate-item__preview {
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto; }
+  .realestate-item__id {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
     font-weight: 400;
-    color: #26aded; }
-    .payment-form__pay-option a:hover, .payment-form__pay-option a:focus {
-      outline: none;
-      color: #6039aa; }
-    .payment-form__pay-option a:active {
-      color: #7946d9; }
+    color: grey; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .realestate-item {
+      margin-bottom: 25px; } }
   @media (min-width: 768px) {
-    .payment-form__submit-button-wrapper {
+    .realestate-item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      text-align: left; }
-    .payment-form__secure-text {
-      display: block;
-      width: 263px;
-      margin-top: 30px;
-      padding-left: 44px;
-      font-size: 12px;
-      font-weight: 400;
-      color: #999999;
-      background-image: url("img/lock--grey.svg");
-      background-repeat: no-repeat;
-      background-size: 20px 26px;
-      background-position: 0 10px; }
-    .payment-form__submit-button {
-      width: 207px;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 20px;
-      text-align: center;
-      background-image: none; }
-    .payment-form__pay-option {
-      width: 100%;
-      text-align: left;
-      margin-top: 25px; } }
-
-.payment-form-card {
-  min-width: 256px;
-  margin-left: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 8px;
-  border: 1px solid #e6e6e6; }
-  .payment-form-card--front-side {
-    position: relative;
-    height: 233px;
-    padding-top: 14px;
-    padding-bottom: 30px;
-    -webkit-box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.1);
-    background-color: #f1f0f9; }
-  .payment-form-card--back-side {
-    height: 256px;
-    margin-top: -157px;
-    padding-top: 166px;
-    background-color: #e7e6f4; }
-  .payment-form-card__pay-sistem-img {
-    width: 100%;
-    height: 26px;
-    margin-bottom: 24px;
-    text-align: right; }
-  .payment-form-card__pay-sistem-img img {
-    width: 154px;
-    height: 26px; }
-  .payment-form-card__fields-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .payment-form-card__fields-wrapper--front-side {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-    .payment-form-card__fields-wrapper--back-side {
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; }
-  .payment-form-card__row:not(:first-of-type) {
-    margin-top: 21px; }
-  .payment-form-card__row--full-width {
-    width: 100%; }
-  .payment-form-card__row--two-thirds {
-    width: 59.6%; }
-  .payment-form-card__row--one-third {
-    width: 37.2%; }
-  .payment-form-card__row--two-thirds + .payment-form-card__row--one-third {
-    margin-left: 7px; }
-  .payment-form-card__row--cvc-code {
-    width: 93px; }
-  .payment-form-card__label {
-    display: block;
-    text-transform: uppercase;
-    font-size: 9px;
-    font-weight: 700;
-    color: #999999;
-    letter-spacing: 0.9px;
-    white-space: nowrap; }
-  .payment-form-card__input {
-    width: 100%;
-    height: 40px;
-    margin-top: 6px;
-    padding-top: 10px;
-    padding-right: 12px;
-    padding-bottom: 11px;
-    padding-left: 12px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333333;
-    border-radius: 4px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc; }
-    .payment-form-card__input::-webkit-input-placeholder {
-      color: #d1cfcf; }
-    .payment-form-card__input:hover, .payment-form-card__input:focus {
-      outline: none;
-      border: 1px solid #6039aa; }
-    .payment-form-card__input--card-holder {
-      text-transform: uppercase; }
-    .payment-form-card__input--exp-date {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      position: relative; }
-      .payment-form-card__input--exp-date::before {
-        content: "/";
-        -webkit-transform: translate(50%);
-                transform: translate(50%);
-        position: absolute;
-        left: 44%;
-        width: 6px;
-        height: 19px;
-        font-size: 14px;
-        font-weight: 400;
-        color: #999999; }
-  .payment-form-card__input-exp-date {
-    width: 20px;
-    border: none;
-    outline: none; }
-    .payment-form-card__input-exp-date::-webkit-input-placeholder {
-      color: #d1cfcf; }
-  .payment-form-card__description {
-    width: 100px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    margin-left: 20px;
-    font-size: 12px;
-    font-weight: 400;
-    color: #999999; }
-  @media (min-width: 768px) {
-    .payment-form-card {
-      width: 391px;
-      padding-left: 24px;
-      padding-right: 24px; }
-      .payment-form-card--front-side {
-        padding-top: 14px; }
-      .payment-form-card--back-side {
-        height: 233px;
-        padding-top: 84px;
-        margin-top: -197px;
-        margin-left: 141px;
-        background-image: linear-gradient(180deg, #e7e6e4 24px, #b49ed6 24px, #b49ed6 74px, #e7e6e4 74px); }
-      .payment-form-card__pay-sistem-img {
-        margin-bottom: 23px; }
-      .payment-form-card__row:not(:first-of-type) {
-        margin-top: 18px; }
-      .payment-form-card__row--two-thirds {
-        width: 220px; }
-      .payment-form-card__row--one-third {
-        width: 108px; }
-      .payment-form-card__fields-wrapper--back-side {
-        float: right;
-        width: 93px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-      .payment-form-card__label {
-        font-size: 10px;
-        letter-spacing: 1px; }
-      .payment-form-card__description {
-        width: 93px;
-        margin-top: 6px;
-        margin-left: 0; } }
+      .realestate-item__preview {
+        margin-top: auto; } }
 

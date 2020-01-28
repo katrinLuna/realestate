@@ -1,0 +1,55 @@
+.realestate-item {
+    width: 100%;
+
+    &__name {
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include set-font (18px, $font-bold, $black);
+    }
+
+    &__price {
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include set-font (16px, $font-bold, $black);
+    }
+
+    &__address {
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include set-font (14px, $font-bold, $black);
+    }
+    
+    &__preview {
+        margin-top: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+    }
+    
+    &__id {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        @include set-font (12px, $font-normal, $grey);
+    }
+
+    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+        margin-bottom: 25px;
+    }
+
+    
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__preview {
+            margin-top: auto;
+        }
+    }
+
+    
+    @media (min-width: $desktop-width) {
+
+    
+    }
+}

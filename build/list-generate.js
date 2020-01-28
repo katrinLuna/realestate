@@ -12,12 +12,17 @@
         
         for (let i = 0; i < dataRequest.length; i++) {
             let item = ITEM_TEMPLATE.cloneNode(true);
+            item.dataset.id = dataRequest[i].id;
             item.querySelector('.realestate-item__name').textContent = dataRequest[i].title;
             item.querySelector('.realestate-item__price').textContent = dataRequest[i].price;
             item.querySelector('.realestate-item__address').textContent = dataRequest[i].address;
             item.querySelector('.realestate-item__preview').src = dataRequest[i].previewImage;
             item.querySelector('.realestate-item__id').textContent = dataRequest[i].id;
             
+            item.addEventListener('click', function (evt) {
+                window.routing.page(item.dataset.id);
+            });
+
             fragment.appendChild(item);
         }
 

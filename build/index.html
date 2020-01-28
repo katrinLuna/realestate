@@ -20,10 +20,14 @@
     <ul class="realestate-list">
     </ul>
 
+    <div class="item-info-wrapper visually-hidden">
+
+    </div>
+
   </main>
 
   <template id="realestate-item-template">
-    <li class="realestate-item">
+    <li class="realestate-item" data-id="">
       <p class="realestate-item__name"></p>
       <p class="realestate-item__price"></p>
       <p class="realestate-item__address"></p>
@@ -32,7 +36,9 @@
     </li>
   </template>
 
-  <script src="upload.js"></script>
+  <script src="download-data.js"></script>
   <script src="list-generate.js"></script>
+  <script src="routing.js"></script>
+  <script src="description-generate.js"></script>
 </body>
 </html>

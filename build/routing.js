@@ -11,6 +11,7 @@
             ESTATES_LIST_ELEMENT.classList.toggle('visually-hidden');
             let data = await window.downloadData(DATA_URL + id);
             window.descriptionGenerate(data[0]);
+            routing.pageData = data[0];
             ESTATE_ITEM_PAGE.classList.toggle('visually-hidden');
         }
     }

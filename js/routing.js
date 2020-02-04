@@ -19,6 +19,7 @@
     BACK_BTN.addEventListener('click', function () {
         ESTATES_LIST_ELEMENT.classList.toggle('visually-hidden');
         ESTATE_ITEM_PAGE.classList.toggle('visually-hidden');
+        window.slider.resetSlider();
     });
 
     window.routing = routing;
